@@ -16,6 +16,7 @@ var buffer = require('vinyl-buffer');
 var plumber = require('gulp-plumber');
 var beeper = require('beeper');
 var del = require('del');
+var sourcemaps = require('gulp-sourcemaps');
 
 function onError(err) {
     beeper();
@@ -45,10 +46,12 @@ gulp.task('styles', function() {
 // Process Scripts
 gulp.task('scripts', function() {
     return gulp.src('app/js/*.js')
+    .pipe(sourcemaps.init())
 	.pipe(jshint())
 	.pipe(jshint.reporter('default'))
 	.pipe(concat('all.js'))
 	.pipe(uglify())
+    .pipe(sourcemaps.write())
 	.pipe(gulp.dest('dist/'));
 });
 
