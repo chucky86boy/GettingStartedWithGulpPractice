@@ -1,0 +1,35 @@
+{
+  "name": "gulp-book",
+  "version": "1.0.0",
+  "description": "A sample gulp project.",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test sepcified\" && exit 1"
+  },
+  "author": "Travis Maynard",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.4.0",
+    "babel-preset-env": "^1.7.0",
+    "babelify": "^10.0.0",
+    "beeper": "^1.1.1",
+    "browser-sync": "^2.26.3",
+    "browserify": "^16.2.3",
+    "connect": "^3.6.6",
+    "cssnano": "^4.1.10",
+    "del": "^4.0.0",
+    "gulp": "^4.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-imagemin": "^5.0.3",
+    "gulp-jshint": "^2.1.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^8.0.0",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-uglify": "^3.0.2",
+    "jshint": "^2.10.2",
+    "postcss-cssnext": "^3.1.0",
+    "serve-static": "^1.13.2",
+    "vinyl-buffer": "^1.0.1",
+    "vinyl-source-stream": "^2.0.0"
+  }
+}
